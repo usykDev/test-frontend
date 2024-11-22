@@ -144,7 +144,7 @@ const Decsription = () => {
                 {isExpanded ? "Згорнути" : "Усі країни"}
               </button>
               <button onClick={toggleExpand}>
-                <img src={isExpanded ? ArrowDown : ArrowUp} alt="" />
+                <img src={isExpanded ? ArrowUp : ArrowDown} alt="" />
               </button>
             </div>
           </div>
