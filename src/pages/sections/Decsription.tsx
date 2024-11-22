@@ -27,7 +27,7 @@ const Decsription = () => {
 
   return (
     <section className="flex w-full items-center justify-center py-20">
-      <div className="flex flex-col gap-5 sm:w-5/6 md:w-11/12 md:flex-row lg:w-5/6 xl:gap-16">
+      <div className="flex w-5/6 flex-col gap-5 md:w-11/12 md:flex-row lg:w-5/6 xl:gap-16">
         <div className="flex flex-col gap-10 md:w-4/6">
           <div className="flex flex-col gap-4">
             <h3 className="font-lato text-3xl font-bold text-neutrals-100">

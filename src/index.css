@@ -21,6 +21,12 @@
   background-color: #4640de;
 }
 
+@media screen and (max-width: 530px) {
+  .active-link::before {
+    content: none; /* Removes the ::before pseudo-element */
+  }
+}
+
 .inactive-link {
   color: inherit;
   border-bottom: none;
