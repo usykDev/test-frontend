@@ -109,7 +109,7 @@ const Reviews = () => {
     <section className="flex w-full justify-center overflow-hidden bg-neutrals-10 pb-11 pt-16">
       <div className="absolute left-0 top-0 h-full w-full bg-white [clip-path:polygon(0_0,6%_0,0_10%)]"></div>
 
-      <div className="flex w-5/6 flex-col gap-4 px-4 md:flex-row lg:gap-8">
+      <div className="flex w-5/6 flex-col gap-8 px-4 md:flex-row lg:gap-8">
         <div className="flex w-full flex-col gap-10">
           <div className="flex flex-col gap-5">
             <h2 className="font-lato text-4xl font-bold text-neutrals-100 md:text-5xl">
