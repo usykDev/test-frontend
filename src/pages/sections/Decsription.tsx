@@ -105,36 +105,25 @@ const Decsription = () => {
             <h3 className="font-lato text-3xl font-bold text-neutrals-100">
               Обслуговуємо країни
             </h3>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col items-start gap-4">
               {flags.slice(0, 5).map((flag) => (
                 <div key={flag.code} className="flex gap-3">
                   <Flag code={flag.code} className="flag" />
-                  <div>{flag.name}</div>
+                  <div className="flex items-center">{flag.name}</div>
                 </div>
               ))}
-            </div>
 
-            {isExpanded &&
-              flags.slice(5).map((flag) => (
-                <div
-                  key={flag.code}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <Flag
-                    code={flag.code}
-                    style={{
-                      width: "40px",
-                      height: "auto",
-                      marginRight: "10px",
-                    }}
-                  />
-                  {flag.name}
-                </div>
-              ))}
+              {isExpanded &&
+                flags.slice(5).map((flag) => (
+                  <div
+                    key={flag.code}
+                    className="flex h-[42px] w-[52px] gap-3 object-contain"
+                  >
+                    <Flag code={flag.code} />
+                    <div className="flex items-center">{flag.name}</div>
+                  </div>
+                ))}
+            </div>
 
             <div className="flex gap-4">
               <button
