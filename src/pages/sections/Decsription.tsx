@@ -107,20 +107,23 @@ const Decsription = () => {
             </h3>
             <div className="flex flex-col items-start gap-4">
               {flags.slice(0, 5).map((flag) => (
-                <div key={flag.code} className="flex gap-3">
-                  <Flag code={flag.code} className="flag" />
-                  <div className="flex items-center">{flag.name}</div>
+                <div key={flag.code} className="flex items-center gap-3">
+                  <Flag
+                    code={flag.code}
+                    className="flag h-8 w-12 object-contain"
+                  />
+                  <div className="text-base font-medium">{flag.name}</div>
                 </div>
               ))}
 
               {isExpanded &&
                 flags.slice(5).map((flag) => (
-                  <div
-                    key={flag.code}
-                    className="flex h-[42px] w-[52px] gap-3 object-contain"
-                  >
-                    <Flag code={flag.code} />
-                    <div className="flex items-center">{flag.name}</div>
+                  <div key={flag.code} className="flex items-center gap-3">
+                    <Flag
+                      code={flag.code}
+                      className="h-8 w-12 object-contain"
+                    />
+                    <div className="text-base font-medium">{flag.name}</div>
                   </div>
                 ))}
             </div>
