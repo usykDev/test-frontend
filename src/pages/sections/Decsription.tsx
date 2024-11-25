@@ -123,7 +123,7 @@ const Decsription = () => {
                       code={flag.code}
                       className="h-[42px] w-[52px] object-cover"
                     />
-                    <div className="text-base font-medium">{flag.name}</div>
+                    <div className="text-base">{flag.name}</div>
                   </div>
                 ))}
             </div>
