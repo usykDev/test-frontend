@@ -110,9 +110,9 @@ const Decsription = () => {
                 <div key={flag.code} className="flex items-center gap-3">
                   <Flag
                     code={flag.code}
-                    className="flag h-8 w-12 object-contain"
+                    className="h-[42px] w-[52px] object-cover"
                   />
-                  <div className="text-base font-medium">{flag.name}</div>
+                  <div className="text-base">{flag.name}</div>
                 </div>
               ))}
 
@@ -121,7 +121,7 @@ const Decsription = () => {
                   <div key={flag.code} className="flex items-center gap-3">
                     <Flag
                       code={flag.code}
-                      className="h-8 w-12 object-contain"
+                      className="h-[42px] w-[52px] object-cover"
                     />
                     <div className="text-base font-medium">{flag.name}</div>
                   </div>

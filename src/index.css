@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  background-color: white;
-} */
-
 .active-link {
   position: relative;
   color: #4640de;
@@ -32,13 +28,8 @@
   border-bottom: none;
 }
 
-.flag {
-  width: 52px;
-  height: 42px;
-}
-
 .swiper-wrapper {
-  margin-bottom: 80px;
+  margin-bottom: 62px;
 }
 
 .swiper-pagination-bullet {

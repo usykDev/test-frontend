@@ -82,7 +82,13 @@ const Calendar = () => {
           <div
             key={day.toISOString()}
             onClick={() => toggleMarkDate(day)}
-            className={`text-md flex h-10 w-10 cursor-pointer items-center justify-center rounded-full font-medium ${!isSameMonth(day, currentDate) ? "text-[#D6DDEB]" : "text-gray-800"} ${isMarked(day) ? "bg-primary-100 text-white" : "text-gray-900"}`}
+            className={`text-md flex h-10 w-10 cursor-pointer items-center justify-center rounded-full font-medium ${
+              !isSameMonth(day, currentDate)
+                ? "text-[#D6DDEB]"
+                : isMarked(day)
+                  ? "bg-primary-100 text-neutrals-0"
+                  : "text-neutrals-100"
+            }`}
           >
             {format(day, "d")}
           </div>
